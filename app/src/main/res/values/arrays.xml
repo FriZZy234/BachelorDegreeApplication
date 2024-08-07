@@ -1,0 +1,22 @@
+<resources>
+    <string-array name="notification_entries">
+        <item>Live Stream Updates</item>
+        <item>Messages</item>
+        <item>General Notifications</item>
+    </string-array>
+    <string-array name="notification_values">
+        <item>live_updates</item>
+        <item>messages</item>
+        <item>general</item>
+    </string-array>
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+    </string-array>
+</resources>

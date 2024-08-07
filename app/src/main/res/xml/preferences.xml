@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Account Settings">
+        <EditTextPreference
+            android:key="edit_text_preference"
+            android:title="Update Profile Information"
+            android:summary="Change your name or email"
+            android:inputType="text" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notification Settings">
+        <SwitchPreferenceCompat
+            android:key="notifications"
+            android:title="Enable Notifications"
+            android:summary="Turn notifications on or off" />
+        <MultiSelectListPreference
+            android:key="notification_preferences"
+            android:title="Notification Preferences"
+            android:summary="Choose what notifications you want to receive"
+            android:entries="@array/notification_entries"
+            android:entryValues="@array/notification_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="App Preferences">
+        <ListPreference
+            android:key="language"
+            android:title="Language"
+            android:summary="Choose app language"
+            android:entries="@array/language_entries"
+            android:entryValues="@array/language_values" />
+        <SwitchPreferenceCompat
+            android:key="theme"
+            android:title="Dark Mode"
+            android:summary="Enable dark mode" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Help and Support">
+        <Preference
+            android:key="faqs"
+            android:title="FAQs"
+            android:summary="Frequently Asked Questions" />
+        <Preference
+            android:key="contact_support"
+            android:title="Contact Support"
+            android:summary="Get help and support" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
