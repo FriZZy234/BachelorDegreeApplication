@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GG_Livestream</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="youtube_api_key">AIzaSyAeO26CP1UF6CYWRunA4xubVKtMiZNPAx8</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="colors_array">
+        <item>Negru</item>
+        <item>Alb</item>
+        <item>Galben</item>
+        <item>Verde</item>
+        <item>Roșu</item>
+        <item>Marou</item>
+        <item>Violet</item>
+        <item>Portocaliu</item>
+        <item>Roz</item>
+    </string-array>
+</resources>

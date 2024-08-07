@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="Stream Title" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+
+        android:hint="Description" />
+
+    <RadioGroup
+        android:id="@+id/visibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/public_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+            android:checked="true"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <RadioButton
+            android:id="@+id/private_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private"
+            android:fontFamily="@font/montserrat_bold"/>
+
+        <RadioButton
+            android:id="@+id/unlisted_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlisted"
+            android:fontFamily="@font/montserrat_bold"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"/>
+</LinearLayout>

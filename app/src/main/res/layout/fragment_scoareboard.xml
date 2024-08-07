@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/first_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Team1 "
+        android:fontFamily="@font/montserrat_light" />
+
+    <ImageButton
+        android:id="@+id/first_team_logo_button"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Choose Team1 Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_upload"/>
+
+    <EditText
+        android:id="@+id/second_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Team2"
+        android:fontFamily="@font/montserrat_light" />
+
+    <ImageButton
+        android:id="@+id/second_team_logo_button"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Choose Team2 Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_upload"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_background"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <ImageView
+        android:id="@+id/scoreboard_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Scoreboard Preview"
+        android:fontFamily="@font/montserrat_light"/>
+</LinearLayout>

@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/live_stream_activity"
+    tools:context=".LivestreamActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.pedro.library.view.OpenGlView
+        android:id="@+id/openGlView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/scoreboard_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Scoreboard Preview"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/team1_plus_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="+"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <TextView
+                        android:id="@+id/team1_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/stop_timer_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stop"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <Button
+                        android:id="@+id/start_timer_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <Button
+                        android:id="@+id/pause_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pause"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <Button
+                        android:id="@+id/resume_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resume"
+                        android:visibility="gone"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <Spinner
+                        android:id="@+id/color_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/team2_plus_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="+"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+
+                    <TextView
+                        android:id="@+id/team2_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/timer_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:gravity="center_vertical"
+                        android:text="00:00"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/resume_timer_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resume"
+                        android:textColor="@android:color/black"
+                        android:background="@drawable/button_background"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
